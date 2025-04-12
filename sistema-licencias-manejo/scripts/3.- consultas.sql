@@ -1,3 +1,12 @@
+-- 0.- Mostrar datos de tablas
+SELECT * FROM cita;
+SELECT * FROM datos_biometrico;
+SELECT * FROM estacion;
+SELECT * FROM licencia;
+SELECT * FROM pago;
+SELECT * FROM persona;
+SELECT * FROM usuario;
+
 -- 1. Listar todas las citas pendientes con información de la persona y estación
 SELECT c.id_cita, c.fecha_hora, c.estado, 
        p.nombre, p.apellido_paterno, p.apellido_materno, p.dni,
